@@ -25,8 +25,9 @@ def reverse_print(list_arg):
 
     class CheckValue:
         # данный класс необходим для проверки наличия атрибута 'value'
-        # т.к. CheckValue определен внутри класса, он недоступен для внешнего вызова
+        # т.к. CheckValue определен внутри функции, он недоступен для внешнего вызова
         # что обеспечивает корректность работы проверки наличия атрибута - list_arg.get('value', CheckValue)
+        # т.к. 'value' точно не может быть равным 'CheckValue'
         pass
 
     def get_reverse_list(list_arg):
